@@ -1,0 +1,2 @@
+- Study Eventloop
+- Study Promises

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vanilla JS DOM Update</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <button id="btn">Increment</button>
+
+    <script>
+      let count = 0;
+
+      function render() {
+        // This REPLACES all content inside #root
+        const root = document.getElementById("root");
+        root.innerHTML = `
+        <h2>Count: ${count}</h2>
+        <p>Timestamp: ${Date.now()}</p>
+      `;
+      }
+
+      document.getElementById("btn").addEventListener("click", () => {
+        count++;
+        render(); // Full re-render of innerHTML
+      });
+
+      render();
+    </script>
+  </body>
+</html>
