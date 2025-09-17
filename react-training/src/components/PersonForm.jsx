@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+// import { themeContext } from "./Parent";
 
 const PersonForm = () => {
+  // const values = useContext(themeContext);
+  console.log(values);
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [age, setAge] = useState(0);

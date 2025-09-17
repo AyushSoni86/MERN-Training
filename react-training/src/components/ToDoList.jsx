@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./TodoList.css";
 
 const ToDoList = () => {
   const currentTodo = {
@@ -34,24 +35,39 @@ const ToDoList = () => {
 
   const deleteTodo = (todoId) => {
     console.log(todoId);
-    const newTodo = todos.filter((currentTodo) => {
-      return todoId !== currentTodo.id;
+    // const newTodo = todos.filter((currentTodo) => {
+    //   return todoId !== currentTodo.id;
+    // });
+    // setTodoList(newTodo);
+    setTodoList((previous) => {
+      return previous.filter((currentTodo) => {
+        return todoId !== currentTodo.id;
+      });
     });
-    setTodoList(newTodo);
-    console.log(newTodo);
+
+    // console.log(newTodo);
   };
 
   return (
-    <div>
-      {todoList.map((currentTodo) => {
-        return (
-          <div key={currentTodo.id}>
-            <h6>{currentTodo.title}</h6>
-            <input type="checkbox" checked={currentTodo.isCompleted} />
-            <button onClick={() => deleteTodo(currentTodo.id)}>delete</button>
-          </div>
-        );
-      })}
+    <div className="todo-container">
+      {todoList.map((currentTodo) => (
+        <div className="todo-item" key={currentTodo.id}>
+          <p style={{ color: "black" }}>{currentTodo.id}.</p>
+          <h6 className="todo-title">{currentTodo.title}</h6>
+          <input
+            className="todo-checkbox"
+            type="checkbox"
+            checked={currentTodo.isCompleted}
+            readOnly
+          />
+          <button
+            className="todo-delete"
+            onClick={() => deleteTodo(currentTodo.id)}
+          >
+            Delete
+          </button>
+        </div>
+      ))}
     </div>
   );
 };

@@ -7,11 +7,25 @@ import TaskList from "./components/TaskList";
 import Button from "./components/Button";
 import PersonForm from "./components/PersonForm";
 import ToDoList from "./components/ToDoList";
+import Clock from "./components/Clock";
+import ProductsList from "./components/ProductsList";
+import ThemeCard from "./components/ThemeCard";
+import { ThemeContextProvider } from "./contexts/themeContext";
+import Parent from "./components/UseCallBackHook/Parent";
+import StudentList from "./components/UseMemoHook/StudentList";
+// import { ThemeContextProvider } from "./components/Parent";
 export default function App() {
-  const [count, setCount] = useState(0);
   const tasks = ["gym", "study", "sleep"];
   return (
-    <div>
+    <div
+      style={{
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
       <h1>React Training</h1>
       {/* <Greetings1 />
       <Greetings1 />
@@ -31,8 +45,16 @@ export default function App() {
       {/* <Counter /> */}
       {/* <TaskList code={tasks} /> */}
       {/* <Button text={"click me!"} color={"green"} /> */}
+
+      {/* <ToDoList /> */}
+      {/* <Clock /> */}
       {/* <PersonForm /> */}
-      <ToDoList />
+      {/* <ThemeCard /> */}
+      {/* <ThemeContextProvider>
+        <ProductsList />
+      </ThemeContextProvider> */}
+      {/* <Parent /> */}
+      <StudentList />
     </div>
   );
 }

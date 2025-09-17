@@ -1,0 +1,56 @@
+/* Container for the whole list */
+.todo-container {
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 16px;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual todo item */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.todo-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Todo title text */
+.todo-title {
+  flex: 1;
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Checkbox styling */
+.todo-checkbox {
+  margin-right: 12px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* Delete button styling */
+.todo-delete {
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.todo-delete:hover {
+  background-color: #c0392b;
+}
