@@ -1,0 +1,91 @@
+
+1. Basics of JavaScript
+
+1. What is JavaScript, and how is it different from Java?
+2. Explain the difference between `var`, `let`, and `const`.
+3. What are primitive and non-primitive data types in JavaScript?
+4. What is `typeof` and when would you use it?
+5. What is hoisting in JavaScript?
+6. What is the difference between `==` and `===`?
+7. What are truthy and falsy values? Provide examples.
+8. What is the difference between `null` and `undefined`?
+9. Explain the concept of NaN. How do you check if a value is NaN?
+10. What are template literals? Give an example.
+
+
+2. Functions and Scope
+
+11. What is a function in JavaScript? How do you define one?
+12. What is the difference between function declarations and function expressions?
+13. What are arrow functions? How are they different from regular functions?
+14. Explain the concept of scope (global, local, block scope).
+15. What are closures? Give an example.
+16. What is the purpose of the `return` statement in a function?
+
+
+3. Objects and Arrays
+
+17. What is an object in JavaScript? How do you create one?
+18. How do you access and modify object properties?
+19. How do you clone or copy an object?
+20. What are arrays? How do you add or remove elements from an array?
+21. Explain array methods like `map()`, `filter()`, `reduce()`, and `forEach()`.
+22. How do you iterate over arrays and objects?
+
+
+4. DOM and Events
+
+23. What is the DOM in JavaScript?
+24. How do you select an element in the DOM? (e.g., `getElementById`, `querySelector`)
+25. How do you change the content or style of an element using JavaScript?
+26. What is an event listener? How do you attach one?
+27. Explain event bubbling and event delegation.
+28. How do you prevent the default behavior of an event?
+
+5. ES6+ Features
+
+29. What is destructuring in JavaScript? Provide an example.
+30. What are default parameters in functions?
+31. What are spread (`...`) and rest (`...`) operators?
+32. What are template literals, and why are they useful?
+33. What are `import` and `export` used for?
+
+
+6. Asynchronous JavaScript
+
+34. What is a callback function?
+35. What are Promises in JavaScript? Give an example.
+36. Explain `async` and `await`.
+37. What is the Event Loop in JavaScript?
+38. What is `setTimeout` and `setInterval`?
+
+
+7. Error Handling and Debugging
+
+39. What are common debugging methods in JavaScript? (`console.log`, breakpoints, etc.)
+40. How do you handle errors using `try...catch`?
+
+
+8. Miscellaneous/Advanced Beginner
+
+41. What is the difference between synchronous and asynchronous code?
+42. What is the difference between shallow copy and deep copy?
+43. What are JavaScript modules?
+44. What are default exports vs named exports?
+45. Explain the concept of `this` in JavaScript.
+46. What are JavaScript timers?
+47. What is the difference between localStorage, sessionStorage, and cookies?
+48. What is JSON, and how do you parse or stringify it?
+49. Explain the difference between `for...of`, `for...in`, and `forEach`.
+50. What are JavaScript data attributes (e.g., `data-*`)?
+
+
+
+9. Common Web APIs
+
+51. What is the Fetch API? How do you use it?
+52. How do you manipulate classes using JavaScript? (`classList.add`, `remove`, `toggle`)
+53. What is the difference between innerHTML, innerText, and textContent?
+54. What are timers in JavaScript (`setTimeout`, `setInterval`)?
+
+
